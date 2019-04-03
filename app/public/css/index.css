@@ -1,0 +1,70 @@
+
+/* banner */
+
+.banner{
+    height: 400px;
+    background: blue;
+    margin-top: 20px;
+
+}
+
+
+
+.wamp{
+    height: 400px;
+    margin-top: 20px;
+    /* background: orange; */
+    
+}
+.wampSmall{
+    width: 47%;
+    height: 100%;
+    overflow: hidden;
+    background: white;
+}
+.wampLeft{
+    float: left;
+}
+.wampRight{
+    float: right;
+}
+
+.iconNews{
+    width: 20px;
+    height: 20px;
+    background: black;
+    margin-top: -3px;
+}
+
+
+.hgroup{
+    font-weight: normal;
+    color: black;
+    font-size:18px;
+    margin-top: 8px;
+}
+.smallContent{
+    margin-top: 10px;
+    background: greenyellow
+}
+.smallContent time{
+    display: inline;
+    float: right;
+    margin-right: 10px;
+}
+.smallContent li{
+    height: 25px;
+    line-height: 25px;
+    
+}
+
+.smallContent a{
+    font-size: 15px;
+    /* color: black; */
+}
+.cont{
+    text-indent: 2em;
+    margin-left: 15px;
+}
+
+

@@ -1,0 +1,22 @@
+1. express 基于node的简单灵活的框架
+
+
+2. 特点：可以设置中间件，响应或者过滤http请求
+	可以实现动态网页，使用路由 响应不同http请求
+	内置ejs模板，实现模板渲染生成html
+
+3. express-generatop:官方团队为开发者准备的一个快速生成工具，可以快速生成一个基本的express的开发框架
+4. express的安装：：
+	1. 安装生成器express-generator	使用npm i -g express-generator  //安装完成之后可以使用express命令
+	
+	2. 创建项目
+		express -e 项目名称==》自动创建一个文件夹
+		express -e  //手动创建目录，
+	3. 安装依赖
+		npm i
+	4. 开启项目：：
+		node app.js
+		npm start
+		node ./bin/www
+	5. 测试项目
+		浏览器输入localhost:

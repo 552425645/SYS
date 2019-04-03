@@ -1,0 +1,168 @@
+
+/*header*/
+
+.header{
+    width: 100%;
+    height: 114px;
+    background: #f5f5f5; 
+}
+.banxin{
+    width: 1200px;
+    margin: 0 auto;
+   
+}
+.banxinHeader{
+    height: 115px;
+    background: url(../img/headbg.jpg) no-repeat;
+    overflow:hidden;
+}
+.logo{
+    margin-top: 10px;
+    width: 512px;
+    height: 92px;
+    float: left;
+}
+.header-logn{
+    width: 420px;
+    height: 92px;
+    float: left;
+    background: url(../img/index1.png) no-repeat;
+    margin-left: 50px;
+    margin-top: 15px;
+    position: relative;
+    
+}
+.logn-all{
+    width: 160px;
+    height: 40px;
+    
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.logn-all p{
+    display: none;
+}
+.logn-all p[globalzhuangtai="false"]{
+    display: block;
+}
+.logn-all p[globaltt="true"]{
+    display: block;
+}
+.header-logn a{
+    
+    color:blue
+}
+
+/* nav*/
+
+.nav{
+    width: 100%;
+    height: 42px;
+    background: #bf0909;
+}
+.nav-ul li{
+    float: left;
+    height: 42px;
+    line-height: 42px;
+    text-align: center;
+    padding: 0 52px;
+
+}
+.nav-ul li:hover{
+    background: url(../img/nav_hover.jpg) repeat
+}
+.hoverNav{
+    background: url(../img/nav_hover.jpg) repeat
+}
+.nav-ul li a{
+    color: white;
+    font-weight:bold;
+    font-family: "Microsoft YaHei"; 
+}
+
+/* 内容 */
+.section-content{
+    background: #f5f5f5;
+    /* height: 500px; */
+    overflow: hidden;
+}
+
+
+
+
+/* 通知条和所在位置*/
+.list-time{
+    height: 40px;
+    background:#4d7262;
+}
+.laba{
+    display: block;
+    float: left;
+    width: 16px;
+    height: 15px;
+    background: url(../img/Menu2_icon.gif) no-repeat;
+    background-position: 0 0;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.timeOver{
+    float: right;
+    height: 25px;
+    border-left: 2px solid white;
+    width: 300px;
+    color: white;
+    font-size: 14px;
+    padding-left: 100px;
+    margin-top: 7px;
+}
+
+.suozai{
+    height:50px;
+    line-height: 50px;
+    font-size: 14px;
+    color: black;
+    text-indent: 3em;
+
+}
+.suozai a{
+    color: black;
+
+}
+.suozai a:hover{
+    color: red;
+}
+
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+.more{
+    float:right;
+    color: black;
+    text-indent: 2em;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+
+
+/*.footer*/
+.footer{
+    height: 100px;
+    background:rgb(240,240,240)
+}
+.footerTop{
+    height: 52px;
+    background: url(../img/xun.gif) no-repeat;
+    background-position: center;
+}
+.footerBottom{
+    font-size: 14px;
+    color: white;
+    background: #bf0909;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+

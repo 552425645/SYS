@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gg.css">
+    <link rel="stylesheet" href="css/denglu.css">
+    <script src="js/jquery.min.js"></script>
+    <title>登陆界面</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="banxin banxinHeader">
+            <div class="logo">
+                <a href="javascrrpt:;">
+                    <img src="img/logo.png" alt="北信学院实验室预约系统">
+                </a>
+            </div>
+            <div class="header-logn">
+             
+            </div>
+        </div>
+    </header>
+    <!-- nav -->
+    <nav class="nav">
+        <div class="banxin">
+            <ul class="nav-ul clearfix">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">通知公告</a></li>
+                <li><a href="javascript:;">规章制度</a></li>
+                <li><a href="javascript:;">服务指南</a></li>
+                <li><a href="javascript:;">实验楼教学中心</a></li>
+                <li><a href="javascript:;">文件下载</a></li>
+                <li><a href="javascript:;">开放预约</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 内容 -->
+    <section class="section-content">
+        <div class="banxin">
+
+
+            <!-- 时间公告 -->
+            <div class="list-time">
+                <span class="laba">
+
+                </span>
+                <div class="timeOver">
+                    今天是<span class="time"></span>
+                    星期<span class="weekeday"></span>
+                </div>
+            </div>
+            <!-- 所在位置 -->
+
+
+            <div class="suozai">
+                您现在所在位置:<a href="index.html">首页</a>>><span>登陆</span>
+            </div>
+            <!-- 登陆主体 -->
+            <div class="denglu">
+                <div class="inputHeader">
+                    <a href="javascript:;" class="active">领导登陆</a>
+                    <a href="javascript:;">教师登陆</a>
+                    <a href="javascript:;">管理员登陆</a>
+                </div>
+                <div class="inputContent">
+                    <div class="bigteacher" style="display:block;">
+                        <form action="/lingdao" method="post">
+                            <div class="denglu-input denglu-name denglu-top">
+                                领导工号：
+                            </div>
+                            <div class="denglu-input">
+                               <input type="text" name="userNumber">
+                            </div>
+                            <div class="denglu-input denglu-name">
+                                    密码：
+                            </div>
+                            <div class="denglu-input">
+                                <input type="password" name="psw">
+                            </div>
+                            <input type="submit" value="登陆" class="login">
+                            <a href="" class="forget">忘记密码</a>
+                        </form>
+                         
+                    </div>
+                    <div class="teacher">
+                            <form action="/teacherlogin" method="post">
+                                    <div class="denglu-input denglu-name denglu-top">
+                                        教师工号：
+                                    </div>
+                                    <div class="denglu-input">
+                                       <input type="text" name="userNumber">
+                                    </div>
+                                    <div class="denglu-input denglu-name">
+                                            密码：
+                                    </div>
+                                    <div class="denglu-input">
+                                        <input type="password" name="psw">
+                                    </div>
+                                    <input type="submit" value="登陆" class="login">
+                                    <a href="" class="forget">忘记密码</a>
+                                </form>
+                    </div>
+                    <div class="admin">
+                            <form action="/adminlogin" method="post">
+                                    <div class="denglu-input denglu-name denglu-top">
+                                        账号：
+                                    </div>
+                                    <div class="denglu-input">
+                                       <input type="text" name="userNumber">
+                                    </div>
+                                    <div class="denglu-input denglu-name">
+                                            密码：
+                                    </div>
+                                    <div class="denglu-input">
+                                        <input type="password" name="psw">
+                                    </div>
+                                    <input type="submit" value="登陆" class="login">
+                                    <a href="" class="forget">忘记密码</a>
+                                </form>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="banxin">
+            <div class="footerTop">
+
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            西安工业大学北方信息工程学院 地址：陕西省西安市高陵区鹿祥路235号 邮编：710200 陕CIP 备02645789号
+        </div>
+    </footer>
+    <script src="js/gg.js"></script>
+
+</body>
+
+</html>

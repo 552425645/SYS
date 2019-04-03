@@ -1,0 +1,60 @@
+.listmain{
+    border: 1px solid black;
+    padding: 20px;
+}
+.hgroup{
+    height: 25px;
+    border-bottom: 2px solid #bf0909;
+}
+
+.tongzhiContent{
+    margin-top: 15px;
+}
+.tongzhiContent li{
+    height: 35px;
+    line-height: 35px;
+    font-size:14px;
+}
+.tongzhiContent li a{
+    color: black;
+}
+.tongzhiContent li time{
+    float: right;
+
+}
+.ContentTitle{
+    display: inline-block;
+   
+    width: 600px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*页数*/
+
+.yeshu{
+    height: 40px;
+    background: gray;
+    font-size: 14px;
+    line-height: 40px;
+}
+.yeshu a{
+    color: black
+}
+.yeshu a:hover{
+    color: red;
+}
+.yeshu a:nth-child(1){
+    margin-left: 20px;
+}
+
+
+
+
+.tiaozhuan{
+    width: 40px;
+    height: 20px;
+    border: 0px;
+    font-size: 14px;
+}

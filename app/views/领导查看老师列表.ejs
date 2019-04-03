@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/gg.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/lingdaoadd.css">
+    <script src="js/jquery.min.js"></script>
+
+    <title>北信学院实验室预约系统</title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="banxin banxinHeader">
+            <div class="logo">
+                <a href="javascrrpt:;">
+                    <img src="img/logo.png" alt="北信学院实验室预约系统">
+                </a>
+            </div>
+            <div class="header-logn">
+                <div class="logn-all">
+                    <p class="denglu" globalzhuangtai="<%=globalzhuangtai%>"> 您好，请<a href="/login"> 登陆</a></p>
+                    <p class="denglu" globaltt="<%=globaltt%>">欢迎您，<%=globalname%><a href="/tuichu"> 退出</a></p> 
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- nav -->
+    <nav class="nav">
+        <div class="banxin">
+            <ul class="nav-ul clearfix">
+                <li><a href="javascript:;">首页</a></li>
+                <li><a href="javascript:;">通知公告</a></li>
+                <li><a href="javascript:;">规章制度</a></li>
+                <li><a href="javascript:;">服务指南</a></li>
+                <li><a href="javascript:;">实验楼教学中心</a></li>
+                <li><a href="javascript:;">文件下载</a></li>
+                <li><a href="javascript:;">开放预约</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- 内容 -->
+    <section class="section-content">
+        <div class="banxin">
+
+            <!-- 时间公告 -->
+            <div class="list-time">
+                <span class="laba">
+
+                </span>
+                <div class="timeOver">
+                    今天是<span class="time"></span>
+                    星期<span class="weekeday"></span>
+                </div>
+            </div>
+            <!-- 所在位置 -->
+            <div class="suozai">
+                您现在所在位置:<a href="index.html">首页</a>>><span>添加管理员</span>
+            </div>
+            <div class="xiangqing">
+                <div class="titleTa clearfix">
+                    <div class="title-xiangqing active"><a href="/teacherlistaaa">老师列表</a></div>
+                    <div class="title-xiangqing"><a href="/studentlistaaa">管理员列表</a></div>
+                </div>
+                <div class="xiangqing-content">
+                    <!-- 老师列表 -->
+                    <ul class="teacherList">
+                        <li class="clearfix">
+                            <div>教师工号</div>
+                            <div>姓名</div>
+                            <div>职位</div>
+                            <div>联系电话</div>
+                            <div>用户名</div>
+                            <div>密码</div>
+                            <div>其他</div>
+                        </li>
+                        <%for(var i in list){%>
+                        <li class="clearfix">
+                            <div><%=list[i].nameNumber%></div>
+                            <div><%=list[i].name%></div>
+                            <div><%=list[i].job%></div>
+                            <div><%=list[i].phoneNumber%></div>
+                            <div><%=list[i].admin%></div>
+                            <div><%=list[i].psw%></div>
+                            <div><a href="/changeTlist?id=<%=list[i]._id%>">修改</a><a href="/removeTlist?id=<%=list[i]._id%>">删除</a></div>
+                        </li>
+                        <%}%>
+                        <a href="/addteacher" class="add">点击添加</a>
+
+                    </ul>
+                    <!-- 学生管理员列表 -->
+                    <ul class="teacherList" style="display:none;">
+                        <li class="clearfix">
+                            <div>教师工号</div>
+                            <div>姓名 </div>
+                            <div>职位</div>
+                            <div>联系电话 </div>
+                            <div>用户名</div>
+                            <div>密码</div>
+                            <div>其他</div>
+                        </li>
+                        <a href="/addteacher" class="add">点击添加</a>
+                    </ul>
+                </div>
+
+            </div>
+
+
+
+
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="banxin">
+            <div class="footerTop">
+
+            </div>
+
+        </div>
+        <div class="footerBottom">
+            西安工业大学北方信息工程学院 地址：陕西省西安市高陵区鹿祥路235号 邮编：710200 陕CIP 备02645789号
+        </div>
+    </footer>
+
+
+
+
+    <script src="js/gg.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
